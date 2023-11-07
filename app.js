@@ -76,7 +76,7 @@ app.use("/api/cars/", require("./routes/carsRoute"));
 // app.use("/api/users/", require("./routes/usersRoute"));
 app.use("/api/bookings/", require("./routes/bookingsRoute"));
 
-// app.use("/api/users/", require("./routes/users"));
+app.use("/api/users/", require("./api/routes/users"));
 // app.use("/api/profile/", require("./routes/profile"));
 // app.use("/api/posts/", require("./routes/posts"));
 // app.use("/api/notifications/", require("./routes/Notification"));
