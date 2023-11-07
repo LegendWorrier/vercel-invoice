@@ -3,7 +3,7 @@ const app = express();
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const path = require("path");
-const multer = require('multer');
+// const multer = require('multer');
 
 const keys = require("./config/keys");
 const passport = require('passport');
