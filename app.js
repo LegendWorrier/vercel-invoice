@@ -3,28 +3,28 @@ const app = express();
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const path = require("path");
-// const multer = require('multer');
+const multer = require('multer');
 
 const keys = require("./config/keys");
-const passport = require('passport');
-const morgan = require('morgan')
+// const passport = require('passport');
+// const morgan = require('morgan')
 // const users = require('./routes/api/users');
 // const profile = require('./routes/api/profile');
 // const posts = require('./routes/api/posts');
-const http = require('http');
-const socketIO = require('socket.io');//
-const { PDFDocument } = require('pdf-lib');
+// const http = require('http');
+// const socketIO = require('socket.io');//
+// const { PDFDocument } = require('pdf-lib');
 
 ///
 // const Note = require("./models/Notification");
 // const Notification = require('./routes/api/Notification');
 
 const cors = require("cors");
-const fs = require('fs');
+// const fs = require('fs');
 
 app.use(cors());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.json());
 
 mongoose.Promise = global.Promise;
 
