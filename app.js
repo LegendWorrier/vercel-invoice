@@ -6,7 +6,7 @@ const path = require("path");
 const multer = require('multer');
 
 const keys = require("./config/keys");
-// const passport = require('passport');
+const passport = require('passport');
 // const morgan = require('morgan')
 // const users = require('./routes/api/users');
 // const profile = require('./routes/api/profile');
