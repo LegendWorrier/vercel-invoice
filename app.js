@@ -8,7 +8,7 @@ const multer = require('multer');
 const keys = require("./config/keys");
 // const passport = require('passport');
 // const morgan = require('morgan')
-const users = require('./routes/api/users');
+// const users = require('./routes/api/users');
 // const profile = require('./routes/api/profile');
 // const posts = require('./routes/api/posts');
 // const http = require('http');
@@ -73,9 +73,13 @@ app.use('/api/download/:filename', (req, res) => {
 app.use(bodyParser.json());
 
 app.use("/api/cars/", require("./routes/carsRoute"));
-app.use("/api/users/", require("./routes/usersRoute"));
+// app.use("/api/users/", require("./routes/usersRoute"));
 app.use("/api/bookings/", require("./routes/bookingsRoute"));
 
+app.use('/api/users', require('./routes/api/users'));
+app.use('/api/profile', require('./routes/api/profile'));
+app.use('/api/posts', require('./routes/api/posts'));
+app.use('/api/notifications', require('./routes/api/Notification'));
 // app.use(express.static("public"))
 
 app.use(express.static(path.join(__dirname, "client", "build")));
